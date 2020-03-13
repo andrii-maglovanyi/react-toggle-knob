@@ -1,9 +1,9 @@
 import React from "react";
 import cn from "./ClassNames";
 
-import styles from "./Option.module.scss";
+import styles from "./Knob.module.scss";
 
-const Option = React.forwardRef(
+const Knob = React.forwardRef(
   ({ isDisabled, isSelected, onSelect, children, value }, ref) => {
     const className = isDisabled
       ? styles.disabled
@@ -13,7 +13,7 @@ const Option = React.forwardRef(
 
     return (
       <span
-        className={cn(className, styles.Option)}
+        className={cn(className, styles.Knob)}
         onClick={isDisabled ? null : () => onSelect(value)}
         ref={isSelected ? ref : null}
       >
@@ -23,10 +23,10 @@ const Option = React.forwardRef(
   }
 );
 
-Option.defaultProps = {
+Knob.defaultProps = {
   isDisabled: false,
   isSelected: false,
   onSelect: null
 };
 
-export default Option;
+export default Knob;

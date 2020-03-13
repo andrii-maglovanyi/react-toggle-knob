@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import Option from "./Option";
+import Knob from "./Knob";
 
 import styles from "./Toggle.module.scss";
 
@@ -71,4 +71,4 @@ export default class Toggle extends Component {
   }
 }
 
-export { Option };
+export { Knob };

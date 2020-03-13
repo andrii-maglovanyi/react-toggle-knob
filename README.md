@@ -18,15 +18,15 @@ npm install react-toggle-knob
 ## Getting Started
 
 ```jsx
-import Toggle, {Option} from "react-toggle-knob";
+import Toggle, {Knob} from "react-toggle-knob";
 
 <Toggle onChange={value => console.log(value)}>
-  <Option value="not-completed">Not completed</Option>
-  <Option value="completed">Completed</Option>
-  <Option value="disabled" isDisabled>
+  <Knob value="not-completed">Not completed</Knob>
+  <Knob value="completed">Completed</Knob>
+  <Knob value="disabled" isDisabled>
     Disabled
-  </Option>
-  <Option value="all">All</Option>
+  </Knob>
+  <Knob value="all">All</Knob>
 </Toggle>
 ```
 
