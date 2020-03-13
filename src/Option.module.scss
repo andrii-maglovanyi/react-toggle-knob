@@ -1,0 +1,20 @@
+.Option{
+  color: rgb(158, 158, 158);
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  line-height: 1.4rem;
+  margin: 0.2rem 0.4rem;
+  cursor: pointer;
+  z-index: 1;
+  text-align: center;
+
+  &.active {
+    color: #222222;
+  }
+
+  &.disabled {
+    color: #dee2e6;
+    cursor: not-allowed;
+  }
+}

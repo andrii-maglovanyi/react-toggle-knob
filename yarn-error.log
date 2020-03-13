@@ -1,0 +1,43 @@
+Arguments: 
+  /Users/maglovanyi/.nvm/versions/node/v12.13.0/bin/node /Users/maglovanyi/.nvm/versions/node/v12.13.0/bin/yarn add -D webpack webpack-cli react react-dom prettier cz-conventional-changelog semantic-release
+
+PATH: 
+  /Users/maglovanyi/.rvm/gems/ruby-2.1.2/bin:/Users/maglovanyi/.rvm/gems/ruby-2.1.2@global/bin:/Users/maglovanyi/.rvm/rubies/ruby-2.1.2/bin:/Users/maglovanyi/google-cloud-sdk/bin:/Users/maglovanyi/.nvm/versions/node/v12.13.0/bin:/Users/maglovanyi/.npm-packages/bin:/usr/local/bin:/usr/local/sbin:/Users/maglovanyi/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/maglovanyi/.npm-packages/bin:/Users/maglovanyi/.rvm/bin:/Users/maglovanyi/.rvm/bin
+
+Yarn version: 
+  1.22.0
+
+Node version: 
+  12.13.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/maglovanyi/Workshop/Projects/open-source/development-env/src/components/react-toggle-knob/package.json: Unexpected token } in JSON at position 212
+      at JSON.parse (<anonymous>)
+      at /Users/maglovanyi/.nvm/versions/node/v12.13.0/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/Users/maglovanyi/.nvm/versions/node/v12.13.0/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /Users/maglovanyi/.nvm/versions/node/v12.13.0/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "react-toggle-knob",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "build": "webpack",
+      "commit": "npx git-cz",
+      "semantic-release": "semantic-release",
+    },
+    "author": "",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
