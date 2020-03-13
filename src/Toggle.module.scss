@@ -1,0 +1,23 @@
+
+.Toggle{
+  background: rgb(245, 245, 245);
+  border-radius: 0.2rem;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 2.2rem;
+  overflow: hidden;
+  padding: 0.2rem;
+  position: relative;
+  width:auto;
+}
+
+.ToggleSlider{
+  background: rgb(255, 255, 255);
+  border-radius: 0.2rem;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  height: 1.4rem;
+  padding: 0.2rem 0.4rem;
+  position: absolute;
+  top: 0.2rem;
+  transition: all .4s ease;
+}
