@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 
-import Knob from "./Knob";
+import cn from "./class-names";
+import Knob from "./knob";
 
-import styles from "./Toggle.module.scss";
+import styles from "./toggle.module.scss";
 
 export default class Toggle extends Component {
   constructor(props) {
@@ -19,7 +20,7 @@ export default class Toggle extends Component {
   }
 
   setPositionAndWidthOfSlider() {
-    if (this.selectedRef && this.selectedRef.current) {
+    if (this.selectedRef && this.selectedRef.current && window) {
       const paddingLeft = parseFloat(
         window
           .getComputedStyle(this.sliderRef.current)
@@ -53,7 +54,7 @@ export default class Toggle extends Component {
   render() {
     const { selectedIndex } = this.state;
     return (
-      <div className={styles.Toggle} ref={this.toggleRef}>
+      <div className={cn(styles.Toggle, this.props.className)} ref={this.toggleRef}>
         {React.Children.map(this.props.children, (child, index) => {
           return React.cloneElement(child, {
             ref: this.selectedRef,
@@ -62,7 +63,7 @@ export default class Toggle extends Component {
           });
         })}
         <div
-          className={styles.ToggleSlider}
+          className={cn(styles.ToggleSlider, "toggle__slider")}
           ref={this.sliderRef}
           style={{ left: this.state.left, width: this.state.width }}
         />
